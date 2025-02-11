@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+# Feedback categories and their counts
+categories = ['Design Clarity', 'Navigation Ease', 'Feature Requests', 'Contact Accessibility', 'Resource Accessibility', 'Personalization', 'Community Building', 'Integration', 'Notification', 'User Guidance']
+counts = [2, 2, 3, 1, 1, 2, 1, 2, 1, 1]  # Each feedback category occurrence from the refined feedback
+
+# Create a pie chart
+plt.figure(figsize=(10, 7))
+plt.pie(counts, labels=categories, autopct='%1.1f%%', startangle=140)
+plt.title('Feedback Category Distribution for Degree Progress Application')
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+# Show the plot
+plt.show()
